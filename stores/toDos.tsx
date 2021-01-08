@@ -1,7 +1,10 @@
-import { FC, useEffect } from "react"
 import create from "zustand"
-import ToDo from "../types/todo"
+
+import { FC, useEffect } from "react"
+
 import useAuthStore from "./auth"
+
+import ToDo from "../types/todo"
 
 import firebase from "firebase"
 import "firebase/firestore"

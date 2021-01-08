@@ -23,11 +23,9 @@ service cloud.firestore {
         	return request.resource.data.owner == request.auth.uid
         }
 
-      	allow read: if isOwner();
-        allow write: if doesHaveOwner();
+      	allow read, update, delete: if isOwner();
+        allow create: if doesHaveOwner();
       }
-
-      // allow read, write: if false;
     }
   }
 }

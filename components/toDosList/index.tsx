@@ -1,7 +1,9 @@
+import { FC } from "react"
+
+import useToDosStore from "stores/toDos"
+
 import Loading from "components/loading"
 import ToDosListItem from "components/toDosList/item"
-import { FC } from "react"
-import useToDosStore from "stores/toDos"
 
 const ToDosList: FC = () => {
   const toDos = useToDosStore((store) => store.todos)

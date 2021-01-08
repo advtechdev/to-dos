@@ -1,8 +1,11 @@
+import { FC } from "react"
+
+import useAuthStore from "stores/auth"
+
 import Button from "components/button"
 import Loading from "components/loading"
-import { FC } from "react"
+
 import { FiLogOut } from "react-icons/fi"
-import useAuthStore from "stores/auth"
 
 const Header: FC = () => {
   const { user, logout } = useAuthStore()

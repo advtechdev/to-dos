@@ -1,5 +1,6 @@
 import { FC } from "react"
 import Head from "next/head"
+
 import Header from "components/layout/header"
 
 const Layout: FC = ({ children }) => (

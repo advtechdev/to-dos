@@ -1,5 +1,6 @@
 import { FC } from "react"
 import { AppProps } from "next/app"
+
 import useAuthStore from "stores/auth"
 import useToDosStore from "stores/toDos"
 

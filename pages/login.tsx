@@ -1,7 +1,9 @@
 import { FC } from "react"
 import useAuthStore from "stores/auth"
-import { FcGoogle } from "react-icons/fc"
+
 import Button from "components/button"
+
+import { FcGoogle } from "react-icons/fc"
 
 const LoginPage: FC = () => {
   const login = useAuthStore((store) => store.loginPopup)

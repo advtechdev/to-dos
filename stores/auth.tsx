@@ -1,9 +1,10 @@
-import { FC, useEffect } from "react"
 import create from "zustand"
+
+import { FC, useEffect } from "react"
+import { useRouter } from "next/router"
 
 import firebase from "firebase"
 import "firebase/auth"
-import { useRouter } from "next/router"
 
 type AuthStoreTypes = {
   user: undefined | null | firebase.User

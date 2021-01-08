@@ -1,7 +1,10 @@
-import Button from "components/button"
 import { FC, useState } from "react"
-import { MdAdd } from "react-icons/md"
+
 import useToDosStore from "stores/toDos"
+
+import Button from "components/button"
+
+import { MdAdd } from "react-icons/md"
 
 interface ToDosNew {
   name: string

@@ -1,3 +1,5 @@
+@tailwind base;
+
 html,
 body {
   padding: 0;
@@ -14,3 +16,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@tailwind components;
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+@tailwind utilities;
